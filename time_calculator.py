@@ -1,6 +1,17 @@
 def add_time(start, duration, dayofweek=''):
     """
-    (fill)
+    Takes in two required parameters and one optional parameter:
+    * a start time in the 12-hour clock format (ending in AM or PM) 
+    * a duration time that indicates the number of hours and minutes
+    * (optional) a starting day of the week, case insensitive
+
+    It adds the duration time to the start time and returns a formatted time.
+    Examples:
+        add_time("3:00 PM", "3:10")
+        # Returns: 6:10 PM
+
+        add_time("11:43 PM", "24:20", "tueSday")
+        # Returns: 12:03 AM, Thursday (2 days later)
     """
     days_week = ['monday', 'tuesday', 'wednesday',
                  'thursday', 'friday', 'saturday', 'sunday']
